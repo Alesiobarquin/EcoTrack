@@ -1,0 +1,371 @@
+body {
+    background-color: #e8f5e9;
+    margin:0px;
+}
+head{
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 800px;
+    height: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.welcome h3 {
+    font-size: 30px;
+    /* align-self: flex-start; */
+}
+
+.welcome h4 {
+    font-size: 25px;
+    /* align-self: flex-start; */
+}
+
+.welcome li {
+    margin-left: 105px;
+    width: 70%;
+    font-size: 23px;
+    /* align-self: flex-start; */
+    margin-bottom: 15px;
+}
+
+.welcome em {
+    color: #388E3C;
+}
+
+.goQuestions {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    padding: 30px 30px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+}
+
+.goQuestions:hover {
+    background-color: #388E3C;
+}
+
+
+.total-question-container {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+.active-question-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 700px;
+    height: 50%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.active-question-container .question {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    width: 80%;
+}
+
+.active-question-container .img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.active-question-container .img img {
+    max-width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.active-question-container .options-container {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.active-question-container .option-circle {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.active-question-container .option-circle:hover {
+    background-color: #45a049;
+    padding: 16px 22px;
+}
+  
+.disabled-question-container {
+    display: none; /* Hide the disabled questions initially */
+}
+
+.last-question-container {
+    display: none;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.navigation .question-counter {
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.nav-button:hover {
+    background-color: #45a049;
+}
+
+#prevButton {
+    display: none;
+}
+
+#nextButton {
+    margin-right: 0;
+}
+
+.finish_container {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.finish {
+    display: none;
+    background: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 15px;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    box-shadow: 0 0 10px rgba(215, 222, 214, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+.finish:hover {
+    background: #388E3C;
+}
+
+.down-arrow {
+    font-size: 100px;
+    color: green;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.review-answers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    height: 40%;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-answers h4 {
+    font-size: 30px;
+    font-weight: bold;
+    height: 10%;
+    margin-bottom: 0px;
+}
+
+.review-answers p {
+    font-size: 22px;
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.review-answers em {
+    font-size: 22px;
+    color: #4CAF50;
+    margin-left: 10px;
+}
+
+/* ALL STYLES FOR THE BACK AND SUBMIT BUTTONS AT THE VERY END */
+
+.back-submit {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back-submit h3 {
+    font-size: 25px;
+}
+
+.back-button {
+    background-color: #f44336; /* Red for "NO" button */
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button {
+    background-color: #4CAF50; /* Green for "YES" button */
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.back-button:hover {
+    background-color: #d32f2f;
+}
+
+.submit-button:hover {
+    background-color: #388E3C;
+}
+
+.thanks {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+
+.blinkMe {
+    font-size: 30px;
+    animation: rainbowBlink 3s linear infinite, blinker 3s linear infinite;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes rainbowBlink {
+    0% {
+        color: red;
+    }
+    14% {
+        color: orange;
+    }
+    28% {
+        color: yellow;
+    }
+    42% {
+        color: green;
+    }
+    57% {
+        color: blue;
+    }
+    71% {
+        color: indigo;
+    }
+    85% {
+        color: violet;
+    }
+    100% {
+        color: red;
+    }
+}
+
+@keyframes blinker {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
+ .view-sustain-tips {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .go-sustain {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 25px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50%;
+    font-size: 25px;
+ }
+
+ .go-sustain:hover {
+    background-color: #388E3C;
+ }

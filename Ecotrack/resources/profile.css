@@ -1,0 +1,67 @@
+head{
+    margin:0;
+}
+body{
+    margin:0;
+    background-color: #FAF7F0;
+}
+@font-face{
+    font-family: 'Bantayog';
+    src: url("bantayog/Bantayog-Semilight.otf");
+}
+.userInfo{
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 65vw;
+    justify-self: center;
+    border: 3px ridge #1F4529;
+    background-color: white;
+}
+.userInfo li{
+    list-style: none;
+    font-size:25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#levelContainer{
+    display:flex;
+    width:90%;
+    height:20px;
+    border:3px solid black;
+    
+}
+#levelBar{
+    background-color: #C2FFC7;
+}
+#levelAmount{
+    width:90%;
+    display:flex;
+    justify-content: space-between;
+}
+#levelAmount div{
+    display: inline;
+}
+#displayBadges li{
+    list-style: none;
+    display: inline;
+}
+#redirectForm{
+    font-family: "Bantayog";
+    font-size: 30px;   
+    justify-self: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 10vh;
+    background-color: #C2FFC7;
+    border:3px solid black;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#redirectForm:hover {
+    background-color: #A8E6AF;
+    cursor: pointer;
+}

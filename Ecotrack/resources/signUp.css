@@ -1,0 +1,134 @@
+/* General Styles */
+@font-face {
+    font-family: 'Bantayog';
+    src: url("bantayog/Bantayog-Semilight.otf");
+}
+body {
+    font-family: "Bantayog";
+    color: #1A5319;
+    margin: 0;  /* Already reset in headerstyles.css */
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section Styles */
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.left .logo {
+    max-width: 20%; /* Scale width relative to container */
+    max-height: 20%; /* Scale height relative to container */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure proper scaling */
+}
+
+/* Right Section Styles */
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+/* Form Container Styles */
+.form-container {
+    width: 80%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Adjust this value as needed to move the form down */
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    font-family: 'arial';
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-variant: normal ; /* Override any global uppercase */
+    text-transform: none; /* Explicitly disable transformation */
+    
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the login prompt text */
+.login-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #4caf50;  /* Green color for the link */
+    text-decoration: none;  /* Remove underline */
+}
+
+.login-text a:hover {
+    text-decoration: underline;  /* Add underline on hover */
+}
+
+.left h3 {
+    font-family: "Bantayog";
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;  /* Center-aligns the text */
+    margin-bottom: 0px; /* Adds space between the text and logo */
+}
+
+.left h4 {
+    font-family: "Bantayog";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;  /* Center-aligns the text */
+    margin-bottom: 0px; /* Adds space between the text and logo */
+}
+
+.left h1 {
+    font-family: "Bantayog";
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;  /* Center-aligns the text */
+    margin-bottom: 0px; /* Adds space between the text and logo */
+    margin-top: 0px;
+}
+
+.right p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

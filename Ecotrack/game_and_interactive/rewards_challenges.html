@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrack - Rewards & Challenges</title>
+    <link rel="stylesheet" href="rewards.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="rewards.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Challenge Section -->
+        <section class="challenge">
+            <h1>Current Challenge: Reduce Carbon Footprint</h1>
+            <div class="progress-container">
+                <label for="progress">Your Progress:</label>
+                <progress id="progress" value="0" max="100"></progress>
+                <span id="points">0 Points</span>
+            </div>
+        </section>
+
+        <!-- Rewards Section at the Bottom -->
+        <section class="rewards">
+            <h2>Featured Rewards</h2>
+            <ul class="reward-list">
+                <li class="reward" data-points="50">
+                    <h3>Eco-Friendly Badge</h3>
+                    <p>Claim this reward after earning 50 points!</p>
+                    <button class="claim-btn">Claim Reward</button>
+                </li>
+                <li class="reward" data-points="100">
+                    <h3>Discount Coupon</h3>
+                    <p>Claim this reward after earning 100 points!</p>
+                    <button class="claim-btn">Claim Reward</button>
+                </li>
+                <li class="reward" data-points="200">
+                    <h3>Tree Planting Donation</h3>
+                    <p>Claim this reward after earning 200 points!</p>
+                    <button class="claim-btn">Claim Reward</button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

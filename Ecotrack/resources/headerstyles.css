@@ -1,0 +1,91 @@
+@font-face{
+    font-family: 'Bantayog';
+    src: url("bantayog/Bantayog-Semilight.otf");
+}
+head{
+    margin:0;
+}
+
+.header{
+    height: 80px;
+    border-bottom:3px solid #1A5319;
+    background-color: #E9EED9;
+    margin: 0;
+    padding:0px;
+    justify-content: space-between;
+    display: flex;
+}
+.header h1{
+    display:flex;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    align-items: center;
+    font-family: "Bantayog";
+    color: #0b6637;
+    font-size: 50px;
+}
+.header h2{
+    display: flex;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    align-items: center;
+}
+.header h3{
+    display:flex;
+    border:0px;
+    margin:0px;
+    padding:0px;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.menu{
+    position:fixed;
+    top:80px;
+    height:100vh;
+    width:15vw;
+    right:-15vw;
+    background-color: #E9EED9;
+    border-left:3px solid #1A5319;
+    display:flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding:0px;
+}
+.menu li{
+    font-size: 20px;
+    list-style: none;
+    font-family: "Bantayog";
+    text-align: center;
+}
+.menuButton{
+    padding: 10px;
+    background-color: #6FA96A;
+    border:3px solid #1A5319;
+    cursor: pointer;
+}
+.menuButton:hover{
+    background-color: #D4D9C4;
+}
+.logOut{
+    padding: 10px;
+    text-align: center;
+    font-family: "Bantayog";
+    background-color: #6FA96A;
+    border: 3px solid #1A5319; /* Optional: Adds a border for consistency */
+    margin-top: 50vh;
+}
+.logOut:hover{
+    background-color: #D4D9C4;
+    cursor: pointer;
+}
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Ensures the link inherits the color of its parent */
+}
+
+a:visited {
+    color: inherit; /* Keeps the same color for visited links */
+}

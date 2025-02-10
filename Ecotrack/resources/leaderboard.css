@@ -1,0 +1,77 @@
+head{
+    margin:0;
+}
+body{
+    margin:0;
+    background-color: #FAF7F0;
+}
+@font-face{
+    font-family: 'Bantayog';
+    src: url("bantayog/Bantayog-Semilight.otf");
+}
+#leaderboardContainer{
+    border-right:3px solid #1A5319;
+    border-left:3px solid #1A5319;
+    border-bottom:3px solid #1A5319;
+    border-radius: 3px;
+    width:40vw;
+    justify-self: center;
+    text-align: center;
+    height: 65vh;
+    display:flex;
+    flex-direction: column;
+}
+#top10{
+    width: auto; /* Make it stretch to the container's width */
+    height: 85%; /* Make it fill the remaining space */
+    display: flex; /* Use Flexbox for the list items */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between;
+    align-self: center; /* Center list items horizontally */
+    text-align: left;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin: 0; 
+}
+#top10 li{
+    height: 18%;
+    list-style: none;
+    font-family: "Bantayog";
+    font-size: 25px;
+    display: flex; /* Use Flexbox for the list items */
+}
+/* General styling for crown icons */
+.crown-icon {
+    display: inline-block;
+    width: 35px; /* Crown width */
+    height: 35px; /* Crown height */
+    margin-right: 10px; /* Space between crown and text */
+    background-size: contain; /* Make crown fit the dimensions */
+    background-repeat: no-repeat;
+}
+
+/* Crown styles for specific ranks */
+.crown-1 .crown-icon {
+    background-image: url('../resources/leaderboardicons/gold.png'); /* Gold crown for 1st place */
+}
+
+.crown-2 .crown-icon {
+    background-image: url('../resources/leaderboardicons/silver.png'); /* Silver crown for 2nd place */
+}
+
+.crown-3 .crown-icon {
+    background-image: url('../resources/leaderboardicons/black.png'); /* Bronze crown for 3rd place */
+}
+#userPosition{
+    width:auto;
+    height:auto;
+    font-size: 35px;
+    font-family: "Bantayog";
+    justify-self: center;
+    background-color: #D4D9C5;
+    text-align: center;
+}
+#userPosition li{
+    list-style: none;
+    display: inline;
+}

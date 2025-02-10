@@ -1,0 +1,98 @@
+<head>
+    <title>Activity Logger</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../resources/headerstyles.css">
+    <script src="../resources/dropdown.js" defer></script>
+    <link rel="stylesheet" href="activity_logger.css">
+    <script type ="text/JavaScript" src="../resources/jquery-3.1.1.min.js"></script>
+    <script type="text/JavaScript" src="logger_controller.js"></script>
+    <script type="text/JavaScript" src="logger_controller2.js"></script>
+
+    <section class="header">
+        <h2><a href="../profile/profile.php">
+            <img src="../resources/EcotrackLogo.png" width="70px" height="70px">
+        </a></h2>
+        <h1>
+            Ecotrack
+        </h1>
+        <h3>
+            <img src="../resources/Dropdown.png" class="dropDownMenu" width="60px" height="60px">
+        </h3>
+    </section>
+    <div class="menu">
+        <li class="menuButton"><a href="../profile/profile.php">Profile</a></li>
+        <li class="menuButton"><a href="../game_and_interactive/badges.php">Badges</a></li>
+        <li class="menuButton"><a href="../game_and_interactive/leaderboard.php">Leaderboard</a></li>
+        <li class="menuButton"><a href="./activity_logger.html">Activity Logger</a></li>
+        <li class="menuButton"><a href="./sustainability_tips.php">Sustainability Tips</a></li>
+        <p class="logOut">Log Out</p>
+    </div>
+</head>
+
+<h1 class="WelcomeMsg"></h1>
+
+<script>
+    function selectOption(button, questionIndex){
+        console.log("Initial declaration, error if you see this in Developer Tools.");
+    }
+
+    var responseMap = new Map();
+    responseMap.set('1', 'NULL');
+    responseMap.set('2', 'NULL');
+    responseMap.set('3', 'NULL');
+    responseMap.set('4', 'NULL');
+    responseMap.set('5', 'NULL');
+
+    var changeValues = new Map();
+    changeValues.set('1', 'NULL');
+    changeValues.set('2', 'NULL');
+    changeValues.set('3', 'NULL');
+    changeValues.set('4', 'NULL');
+    changeValues.set('5', 'NULL');
+</script>
+
+<div class="total-question-container">
+    <div class="navigation">
+        <button class="nav-button" id="prevButton">←</button>
+        <span class="question-counter" id="questionCounter">Question 1 of 5</span>
+        <button class="nav-button" id="nextButton">→</button>
+     </div>
+</div>
+
+<div class="welcome">
+    <h3>Welcome to your personalized Activity Logger!</h3>
+    <h4>There are a few rules and things to keep in mind:</h4>
+    <ol>
+        <li>Do not lie on any of these questions. Remember, this is solely for your benefit.</li>
+        <li>You are free to exit this Activity Logger at any point without risk of data loss.</li>
+        <li>You may refresh at any point, but note that doing so will cause you to come back to this screen and generate a completely new set of questions.</li>
+        <li>There are 3,125 total possible arrangements of questions!</li>
+    </ol>
+    <h4>That's all! Try your best and <em>be honest!</em></h4>
+    <button class="goQuestions">Let's Go</button>
+</div>
+
+<div class="finish_container">
+    <button class="finish">Done</button>
+</div>
+
+<div class="check_answers"></div>
+
+<div class="back-submit">
+    <h3>Would you like to submit your answers now?</h3>
+    <div class="all_buttons">
+        <button class="back-button">NO, go back</button>
+        <button class="submit-button">YES, submit</button>
+    </div>
+</div>
+
+<div class="thanks_view">
+    <div class="thanks">
+        <span class="blinkMe">THANK YOU!</span> <br> Your response has been recorded.
+        <h4>Click below to view your sustainability tips directly, or feel free to exit.</h4>
+    </div>
+
+    <div class="view-sustain-tips">
+        <button class="go-sustain" onclick="window.location.href='sustainability_tips.php';">View my Sustainability Tips</button>
+    </div>
+</div>
